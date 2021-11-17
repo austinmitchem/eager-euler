@@ -9,6 +9,9 @@ function App() {
         <p>
           This is a new feature!
         </p>
+        <p>
+          This is another new feature!
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
