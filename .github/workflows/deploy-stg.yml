@@ -5,12 +5,10 @@ on:
     branches:
       - main
 
-defaults:
-  environment: stg
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: stg
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12
