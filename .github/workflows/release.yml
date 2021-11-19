@@ -64,37 +64,20 @@ jobs:
       - name: Push new branch
         run: git push origin ${{ env.RELEASE_BRANCH }}
 
-  create-pull-request:
+  deploy-production:
     runs-on: ubuntu-latest
+    environment: prd
     needs: [create-release-branch]
-    if: ${{ startsWith(github.ref_name, 'release/') }}
     env:
       RELEASE_BRANCH: ${{ needs.create-release-branch.outputs.release_branch }}
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: main
-      - name: Create pull request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          branch: ${{ env.RELEASE_BRANCH }}
-          base: main
-          title: 'hotfix: ${{ env.RELEASE_BRANCH }}'
-          body: 'This pull request is automatically generated when a hotfix is deployed
-                        to a release branch. Merge this pull request to include the hotfix
-                        in the main branch.'
-
-  deploy-production:
-    runs-on: ubuntu-latest
-    environment: prd
-    needs: [create-release-branch]
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ needs.create-release-branch.outputs.release_branch }}
+          ref: ${{ env.RELEASE_BRANCH }}
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           buildpack: https://github.com/mars/create-react-app-buildpack.git
+          branch: ${{ env.RELEASE_BRANCH }}
