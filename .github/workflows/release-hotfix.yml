@@ -1,22 +1,22 @@
-name: Release
+name: Release Hotfix
 
 on:
   push:
     branches:
-      - main
+      - 'release/**'
 
 jobs:
   release-please:
     runs-on: ubuntu-latest
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
-      tag_name: ${{ steps.release.outputs.tag_name }}
     steps:
       - uses: GoogleCloudPlatform/release-please-action@v2
         id: release
         with:
           release-type: node
           package-name: release-please-action
+          default-branch: ${{ github.ref_name }}
           changelog-types: '[{"type": "build", "section": "Other"},
                             {"type": "ci", "section": "Other"},
                             {"type": "chore", "section": "Other"},
@@ -32,8 +32,12 @@ jobs:
   deploy-staging:
     runs-on: ubuntu-latest
     environment: stg
+    needs: [release-please]
+    if: ${{ !needs.release-please.outputs.release_created }}
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref_name }}
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
@@ -41,29 +45,15 @@ jobs:
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           buildpack: https://github.com/mars/create-react-app-buildpack.git
 
-  create-release-branch:
-    runs-on: ubuntu-latest
-    needs: [deploy-staging, release-please]
-    if: ${{ needs.release-please.outputs.release_created }}
-    env:
-      RELEASE_BRANCH: release/${{ needs.release-please.outputs.tag_name }}
-    outputs:
-      release_branch: ${{ RELEASE_BRANCH }}
-    steps:
-      - uses: actions/checkout@v2
-      - name: Create release branch
-        run: git checkout -b ${{ env.RELEASE_BRANCH }}
-      - name: Push new branch
-        run: git push origin ${{ env.RELEASE_BRANCH }}
-
   deploy-production:
     runs-on: ubuntu-latest
     environment: prd
-    needs: [create-release-branch]
+    needs: [release-please]
+    if: ${{ needs.release-please.outputs.release_created }}
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: ${{ needs.create-release-branch.outputs.release_branch }}
+          ref: ${{ github.ref_name }}
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
