@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://www.github.com/austinmitchem/eager-euler/compare/v0.2.2...v0.3.0) (2021-11-19)
+
+
+### Features
+
+* new super duper fancy line ([#27](https://www.github.com/austinmitchem/eager-euler/issues/27)) ([b7e0712](https://www.github.com/austinmitchem/eager-euler/commit/b7e0712feeaa1b1d4afece4159fd3828fef1a8a9))
+* website says hello there ([#23](https://www.github.com/austinmitchem/eager-euler/issues/23)) ([6427f3c](https://www.github.com/austinmitchem/eager-euler/commit/6427f3c72cdd6d1668565d878034205b863f246e))
+
+
+### Bug Fixes
+
+* fix typo in release.yml ([#30](https://www.github.com/austinmitchem/eager-euler/issues/30)) ([f41749d](https://www.github.com/austinmitchem/eager-euler/commit/f41749dc8680c8b66daaffa4efcfbb1f4768c573))
+
+
+### Other
+
+* add hotfix support ([#29](https://www.github.com/austinmitchem/eager-euler/issues/29)) ([885cd44](https://www.github.com/austinmitchem/eager-euler/commit/885cd444ecb8b6246440b8b9e9cc04f4c0b86fa6))
+* add missing test ([#24](https://www.github.com/austinmitchem/eager-euler/issues/24)) ([b358021](https://www.github.com/austinmitchem/eager-euler/commit/b35802130be9083eef32dcc04704518f55f71e85))
+* change formatting ([#28](https://www.github.com/austinmitchem/eager-euler/issues/28)) ([73146f7](https://www.github.com/austinmitchem/eager-euler/commit/73146f7bf077d844728fd08083fd2130b5eb9ec5))
+
 ### [0.2.2](https://www.github.com/austinmitchem/eager-euler/compare/v0.2.1...v0.2.2) (2021-11-19)
 
 
