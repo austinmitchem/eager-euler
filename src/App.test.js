@@ -11,3 +11,7 @@ test('renders learn react link', () => {
 test('will pass', () => {
   console.log('this test passes!');
 });
+
+test('will pass too', () => {
+  console.log('this test passes too!');
+});
