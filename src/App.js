@@ -11,7 +11,7 @@ function App() {
           And this is a new line.
         </p>
         <p>
-          Something else!!!
+          Something else!!! more features for next release
         </p>
         <a className="App-link"
           href="https://reactjs.org"
