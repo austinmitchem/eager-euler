@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://www.github.com/austinmitchem/eager-euler/compare/v0.2.2...v0.2.3) (2021-11-19)
+
+
+### Other
+
+* add missing test ([#24](https://www.github.com/austinmitchem/eager-euler/issues/24)) ([b358021](https://www.github.com/austinmitchem/eager-euler/commit/b35802130be9083eef32dcc04704518f55f71e85))
+
 ### [0.2.2](https://www.github.com/austinmitchem/eager-euler/compare/v0.2.1...v0.2.2) (2021-11-19)
 
 
