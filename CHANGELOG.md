@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://www.github.com/austinmitchem/eager-euler/compare/v0.1.0...v0.2.0) (2021-11-19)
+
+
+### Features
+
+* add actions ([#10](https://www.github.com/austinmitchem/eager-euler/issues/10)) ([fcb5f0e](https://www.github.com/austinmitchem/eager-euler/commit/fcb5f0e6112b353f41eeafddbcf9551a549bb3d5))
+* add dockerfile ([#9](https://www.github.com/austinmitchem/eager-euler/issues/9)) ([3e4e811](https://www.github.com/austinmitchem/eager-euler/commit/3e4e8115d755a43feda66c3a1d84e58d621bdbd2))
+* another new thing ([#11](https://www.github.com/austinmitchem/eager-euler/issues/11)) ([3913771](https://www.github.com/austinmitchem/eager-euler/commit/391377185c34a35a6d81a4848d13cb7cdc227dc3))
+* new homepage ([#5](https://www.github.com/austinmitchem/eager-euler/issues/5)) ([7f0fb6e](https://www.github.com/austinmitchem/eager-euler/commit/7f0fb6e99a2904d42f22c2088ac63f22948c533b))
+* really cool feature ([#16](https://www.github.com/austinmitchem/eager-euler/issues/16)) ([5ecca57](https://www.github.com/austinmitchem/eager-euler/commit/5ecca57fbf6df22f392f87d02f83b1cb3c976515))
+* use buildpack ([#15](https://www.github.com/austinmitchem/eager-euler/issues/15)) ([336d18b](https://www.github.com/austinmitchem/eager-euler/commit/336d18be772a4ae28ad2b74775f65c4ef2096feb))
+
+
+### Bug Fixes
+
+* fix bad yaml in actions ([#12](https://www.github.com/austinmitchem/eager-euler/issues/12)) ([ac1568c](https://www.github.com/austinmitchem/eager-euler/commit/ac1568c6ba87a75fa2d48942043c60e003661ca2))
+* fix environments ([#13](https://www.github.com/austinmitchem/eager-euler/issues/13)) ([47afc17](https://www.github.com/austinmitchem/eager-euler/commit/47afc175810c6ab0099ee282870a9bb735de7baa))
+* make text red and bigger ([#8](https://www.github.com/austinmitchem/eager-euler/issues/8)) ([065261e](https://www.github.com/austinmitchem/eager-euler/commit/065261ed7d1eb3f784d74ed83349ce63bf51783d))
+* use curly braces ([#14](https://www.github.com/austinmitchem/eager-euler/issues/14)) ([2e940a3](https://www.github.com/austinmitchem/eager-euler/commit/2e940a332d1096e65a764bae72685f8e4ae211a2))
+
 ## 0.1.0 (2021-11-16)
 
 
