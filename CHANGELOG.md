@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://www.github.com/austinmitchem/eager-euler/compare/v0.3.0...v0.4.0) (2021-11-19)
+
+
+### Features
+
+* moar feature ([#31](https://www.github.com/austinmitchem/eager-euler/issues/31)) ([2fec326](https://www.github.com/austinmitchem/eager-euler/commit/2fec326bebc2b682d96584403589da5796eb3e24))
+
+
+### Other
+
+* fix pull request job ([#36](https://www.github.com/austinmitchem/eager-euler/issues/36)) ([8412bbf](https://www.github.com/austinmitchem/eager-euler/commit/8412bbfba985da6344d03a1ab9bbbd34083d0049))
+* refactor hotfix flow ([#35](https://www.github.com/austinmitchem/eager-euler/issues/35)) ([4d62b2b](https://www.github.com/austinmitchem/eager-euler/commit/4d62b2b936a08ca6c715735e6bade4fbeb3e987e))
+
 ## [0.3.0](https://www.github.com/austinmitchem/eager-euler/compare/v0.2.2...v0.3.0) (2021-11-19)
 
 
