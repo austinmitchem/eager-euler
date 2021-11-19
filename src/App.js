@@ -13,12 +13,10 @@ function App() {
         <p>
           Something else!!!
         </p>
-        <a
-          className="App-link"
+        <a className="App-link"
           href="https://reactjs.org"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           Learn React
         </a>
       </header>
