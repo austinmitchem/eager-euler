@@ -10,7 +10,7 @@ function App() {
           This is a new feature!
         </p>
         <p>
-          This is another new feature!
+          Something else
         </p>
         <a
           className="App-link"
