@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: GoogleCloudPlatform/release-please-action@v2
         with:
-          token: ${{ secrets.COMMIT_TOKEN }}
+          token: ${{ secrets.COMMIT_KEY }}
           release-type: node
           package-name: release-please-action
           changelog-types: '[{"type": "build", "section": "Other"},
