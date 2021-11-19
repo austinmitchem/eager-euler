@@ -57,6 +57,8 @@ jobs:
       release_branch: ${{ env.RELEASE_BRANCH }}
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref_name }}
       - name: Create release branch
         run: git checkout -b ${{ env.RELEASE_BRANCH }}
       - name: Push new branch
@@ -71,14 +73,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: ${{ env.RELEASE_BRANCH }}
+          ref: main
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
         with:
           branch: ${{ env.RELEASE_BRANCH }}
           base: main
           title: 'hotfix: ${{ env.RELEASE_BRANCH }}'
-          description: 'This pull request is automatically generated when a hotfix is deployed
+          body: 'This pull request is automatically generated when a hotfix is deployed
                         to a release branch. Merge this pull request to include the hotfix
                         in the main branch.'
 
