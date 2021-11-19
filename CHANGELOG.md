@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://www.github.com/austinmitchem/eager-euler/compare/v0.2.1...v0.2.2) (2021-11-19)
+
+
+### Bug Fixes
+
+* use correct secret name ([#20](https://www.github.com/austinmitchem/eager-euler/issues/20)) ([0bb6ff1](https://www.github.com/austinmitchem/eager-euler/commit/0bb6ff12ce2a77beda1f04a46979819fe6e006b8))
+* use deploy key for release-please ([#19](https://www.github.com/austinmitchem/eager-euler/issues/19)) ([71cce29](https://www.github.com/austinmitchem/eager-euler/commit/71cce29f0634c47d087bc7af846eca913a7c8078))
+
+
+### Other
+
+* refactor ci pipeline ([#21](https://www.github.com/austinmitchem/eager-euler/issues/21)) ([93ef9aa](https://www.github.com/austinmitchem/eager-euler/commit/93ef9aa2cc7baae8557ef8f912dd41edb07d4882))
+
 ### [0.2.1](https://www.github.com/austinmitchem/eager-euler/compare/v0.2.0...v0.2.1) (2021-11-19)
 
 
