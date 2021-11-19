@@ -48,7 +48,7 @@ jobs:
     env:
       RELEASE_BRANCH: release/${{ needs.release-please.outputs.tag_name }}
     outputs:
-      release_branch: ${{ RELEASE_BRANCH }}
+      release_branch: ${{ env.RELEASE_BRANCH }}
     steps:
       - uses: actions/checkout@v2
       - name: Create release branch
