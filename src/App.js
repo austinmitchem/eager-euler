@@ -8,10 +8,6 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           This is a new feature!
-          And this is a new line.
-        </p>
-        <p>
-          Something else!!! more features for next release
         </p>
         <a className="App-link"
           href="https://reactjs.org"
@@ -20,7 +16,6 @@ function App() {
           Learn React
         </a>
       </header>
-      <p><strong>hello world</strong></p>
     </div>
   );
 }
