@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - release/**
 
 jobs:
   release-please:
@@ -32,20 +31,12 @@ jobs:
                             {"type": "test", "section": "Other"}]'
 
   deploy-staging:
-    runs-on: ubuntu-latest
-    environment: stg
     needs: [release-please]
     if: ${{ !needs.release-please.outputs.release_created }}
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.ref_name }}
-      - uses: akhileshns/heroku-deploy@v3.12.12
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
-          heroku_email: ${{secrets.HEROKU_EMAIL}}
-          buildpack: https://github.com/mars/create-react-app-buildpack.git
+    uses: austinmitchem/eager-euler/.github/workflows/deploy.yml@main
+    with:
+      branch: ${{ github.ref_name }}
+      environment: stg
 
   create-release-branch:
     runs-on: ubuntu-latest
@@ -65,19 +56,8 @@ jobs:
         run: git push origin ${{ env.RELEASE_BRANCH }}
 
   deploy-production:
-    runs-on: ubuntu-latest
-    environment: prd
     needs: [create-release-branch]
-    env:
-      RELEASE_BRANCH: ${{ needs.create-release-branch.outputs.release_branch }}
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ env.RELEASE_BRANCH }}
-      - uses: akhileshns/heroku-deploy@v3.12.12
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
-          heroku_email: ${{secrets.HEROKU_EMAIL}}
-          buildpack: https://github.com/mars/create-react-app-buildpack.git
-          branch: ${{ env.RELEASE_BRANCH }}
+    uses: austinmitchem/eager-euler/.github/workflows/deploy.yml@main
+    with:
+      branch: ${{ needs.create-release-branch.outputs.release_branch }}
+      environment: prd
