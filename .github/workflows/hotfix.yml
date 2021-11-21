@@ -79,3 +79,4 @@ jobs:
           pr_title: "hotfix: ${{ needs.release.outputs.release_branch }}"
           pr_body: "This is an automatically created pull request to bring the main branch up-to-date with a hotfix deployed to a release branch."
           pr_label: "auto"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
