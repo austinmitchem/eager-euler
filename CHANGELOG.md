@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.7.1 (2021-11-21)
+
+
+### Other
+
+* add github token ([9d128fc](https://github.com/austinmitchem/eager-euler/commit/9d128fce187b40f1d82f32427aca2509078447ba))
+
 ## [0.7.0](https://www.github.com/austinmitchem/eager-euler/compare/v0.6.2...v0.7.0) (2021-11-21)
 
 
