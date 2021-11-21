@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.0](https://www.github.com/austinmitchem/eager-euler/compare/v0.6.2...v0.7.0) (2021-11-21)
+
+
+### Features
+
+* nice feature ([#70](https://www.github.com/austinmitchem/eager-euler/issues/70)) ([d930885](https://www.github.com/austinmitchem/eager-euler/commit/d930885473f72f36178086a3619b8ee58160dc63))
+
+
+### Other
+
+* add npm install ([#74](https://www.github.com/austinmitchem/eager-euler/issues/74)) ([7428c16](https://www.github.com/austinmitchem/eager-euler/commit/7428c16990c591d2cb91608892977988842c3a6c))
+
 ### [0.6.2](https://www.github.com/austinmitchem/eager-euler/compare/v0.6.1...v0.6.2) (2021-11-21)
 
 
