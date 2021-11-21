@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.8.0](https://www.github.com/austinmitchem/eager-euler/compare/v0.7.0...v0.8.0) (2021-11-21)
+
+
+### Features
+
+* new feature 2.0 ([#78](https://www.github.com/austinmitchem/eager-euler/issues/78)) ([2a27c53](https://www.github.com/austinmitchem/eager-euler/commit/2a27c5333926014aaa3f517929e393b1b892acfc))
+
+
+### Other
+
+* add git configuration ([bef5a58](https://www.github.com/austinmitchem/eager-euler/commit/bef5a58c6e9b91b9a53a3dcfbca2f09913b414cf))
+* add github token ([33fc5ad](https://www.github.com/austinmitchem/eager-euler/commit/33fc5adcf7884e46fa0da44822032fffd23db77b))
+* checkout new release branch ([7c25fad](https://www.github.com/austinmitchem/eager-euler/commit/7c25fadfb8c535823a44211428b3f8d4acedf7a9))
+* fix checkout new release branch ([c508885](https://www.github.com/austinmitchem/eager-euler/commit/c508885cd7d874bb75c62f5635210d4369e163d5))
+* fix push upstream ([76b452e](https://www.github.com/austinmitchem/eager-euler/commit/76b452e8b9ab9f33ec05059da5423aee00a1989c))
+* setup git config earlier ([e920ad0](https://www.github.com/austinmitchem/eager-euler/commit/e920ad0ae45af21d0c89e208df15e67708db81ec))
+
 ### 0.7.1 (2021-11-21)
 
 
