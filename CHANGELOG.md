@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.2](https://www.github.com/austinmitchem/eager-euler/compare/v0.6.1...v0.6.2) (2021-11-21)
+
+
+### Other
+
+* fix path to deploy.yml ([#66](https://www.github.com/austinmitchem/eager-euler/issues/66)) ([90dabc1](https://www.github.com/austinmitchem/eager-euler/commit/90dabc1b9d2d350be514c0bec77b4306007fd7cf))
+* refactor ci ([#68](https://www.github.com/austinmitchem/eager-euler/issues/68)) ([e538213](https://www.github.com/austinmitchem/eager-euler/commit/e538213f074daddac6d46b159bf611d6ba79cfb8))
+* refactor ci workflow ([#65](https://www.github.com/austinmitchem/eager-euler/issues/65)) ([7e26afd](https://www.github.com/austinmitchem/eager-euler/commit/7e26afdc027df2985c4ce5bac2248e91e7571db7))
+
 ### [0.6.1](https://www.github.com/austinmitchem/eager-euler/compare/v0.6.0...v0.6.1) (2021-11-21)
 
 
