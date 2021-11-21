@@ -28,7 +28,7 @@ jobs:
             VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[",]//g' | tr -d '[[:space:]]')
             echo ::set-output name=version::$VERSION
       - name: Push new release branch
-        run: git push --follow-tags origin release/v${{ steps.version.outputs.version }}
+        run: git push -u --follow-tags origin release/v${{ steps.version.outputs.version }}
 
   deploy-staging:
     runs-on: ubuntu-latest
