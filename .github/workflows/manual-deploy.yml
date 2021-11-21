@@ -4,13 +4,13 @@ on: workflow_dispatch
 
 jobs:
   deploy-staging:
-    uses: austinmitchem/eager-euler/.github/workflows/deploy.yml@main
+    uses: ./.github/workflows/deploy.yml@main
     with:
       branch: ${{ github.ref_name }}
       environment: stg
 
   deploy-production:
-    uses: austinmitchem/eager-euler/.github/workflows/deploy.yml@main
+    uses: ./.github/workflows/deploy.yml@main
     with:
       branch: ${{ github.ref_name }}
       environment: prd

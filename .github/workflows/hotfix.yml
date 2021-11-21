@@ -23,14 +23,14 @@ jobs:
 
   deploy-staging:
     needs: [release]
-    uses: austinmitchem/eager-euler/.github/workflows/deploy.yml@main
+    uses: ./.github/workflows/deploy.yml@main
     with:
       branch: ${{ needs.release.outputs.release_branch }}
       environment: stg
   
   deploy-production:
     needs: [release, deploy-staging]
-    uses: austinmitchem/eager-euler/.github/workflows/deploy.yml@main
+    uses: ./.github/workflows/deploy.yml@main
     with:
       branch: ${{ needs.release.outputs.release_branch }}
       environment: prd
