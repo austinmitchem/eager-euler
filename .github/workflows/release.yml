@@ -33,7 +33,7 @@ jobs:
   deploy-staging:
     needs: [release-please]
     if: ${{ !needs.release-please.outputs.release_created }}
-    uses: austinmitchem/eager-euler/.github/workflows/deploy.yml@main
+    uses: ./.github/workflows/deploy.yml@main
     with:
       branch: ${{ github.ref_name }}
       environment: stg
@@ -57,7 +57,7 @@ jobs:
 
   deploy-production:
     needs: [create-release-branch]
-    uses: austinmitchem/eager-euler/.github/workflows/deploy.yml@main
+    uses: ./.github/workflows/deploy.yml@main
     with:
       branch: ${{ needs.create-release-branch.outputs.release_branch }}
       environment: prd
