@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.7.1 (2021-11-21)
+
+
+### Other
+
+* fix checkout new release branch ([678462d](https://github.com/austinmitchem/eager-euler/commit/678462d685919b7c759ad255e2452159ef0e5679))
+
 ## [0.7.0](https://www.github.com/austinmitchem/eager-euler/compare/v0.6.2...v0.7.0) (2021-11-21)
 
 
