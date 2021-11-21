@@ -13,7 +13,7 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer">
-          A hotfix
+          A nice feature
         </a>
       </header>
     </div>
