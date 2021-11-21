@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.1](https://www.github.com/austinmitchem/eager-euler/compare/v0.6.0...v0.6.1) (2021-11-21)
+
+
+### Bug Fixes
+
+* make a hotfix ([#59](https://www.github.com/austinmitchem/eager-euler/issues/59)) ([5b6d7d2](https://www.github.com/austinmitchem/eager-euler/commit/5b6d7d21413f1982752787e8cc8aafe4cb7227f5))
+
+
+### Other
+
+* add standard-version ([#64](https://www.github.com/austinmitchem/eager-euler/issues/64)) ([99a4967](https://www.github.com/austinmitchem/eager-euler/commit/99a4967652cfe12a2b0db8b5057a30f9e59ab9e1))
+* update docs ([#57](https://www.github.com/austinmitchem/eager-euler/issues/57)) ([6c102e9](https://www.github.com/austinmitchem/eager-euler/commit/6c102e9ac31bbecbce82cbbc028c2dd0cbee6600))
+
 ## [0.6.0](https://www.github.com/austinmitchem/eager-euler/compare/v0.5.0...v0.6.0) (2021-11-20)
 
 
