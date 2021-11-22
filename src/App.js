@@ -10,6 +10,7 @@ function App() {
           This is a new feature!
           New feature 2.0
         </p>
+        <p>A new feature 3</p>
         <a className="App-link"
           href="https://reactjs.org"
           target="_blank"
