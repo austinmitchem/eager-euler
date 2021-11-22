@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.10.0](https://www.github.com/austinmitchem/eager-euler/compare/v0.9.0...v0.10.0) (2021-11-22)
+
+
+### Features
+
+* feature demo ([f2b454d](https://www.github.com/austinmitchem/eager-euler/commit/f2b454d699ac1fb823ca122c21de3b19206a0639))
+
 ## [0.9.0](https://www.github.com/austinmitchem/eager-euler/compare/v0.8.0...v0.9.0) (2021-11-22)
 
 
