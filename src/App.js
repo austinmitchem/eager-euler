@@ -9,6 +9,7 @@ function App() {
         <p>
           This is a new feature!
           New feature 2.0
+          a new feature
         </p>
         <p>A new feature 3</p>
         <a className="App-link"
